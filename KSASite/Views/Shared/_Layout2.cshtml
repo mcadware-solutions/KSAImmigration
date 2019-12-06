@@ -14,7 +14,7 @@
 
     <!-- inject css start -->
     <!--== theme plugin -->
-    <link href="/css/theme-plugin.css?88" rel="stylesheet" type="text/css" />
+    <link href="/css/theme-plugin.css?8448" rel="stylesheet" type="text/css" />
 
     <!--== style -->
     <link href="/css/style.css?00g" rel="stylesheet" type="text/css" />
@@ -155,10 +155,25 @@
                                     <ul class="navbar-nav mr-auto">
                                         <!-- Home -->
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link active" href="#" role="button">Home</a>
+                                            @if ((string)ViewData["Title"] == "Home")
+                                            {
+                                                <a class="nav-link active" href="/Home/Index" role="button">Home</a>
+                                            }
+                                            else
+                                            {
+                                                <a class="nav-link" href="/Home/Index" role="button">Home</a>
+                                            }
                                         </li>
                                         <li class="nav-item dropdown" data-toggle="hover">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who We Are</a>
+                                            @if ((string)ViewData["Title"] == "About")
+                                            {
+                                                <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who We Are</a>
+                                            }
+                                            else
+                                            {
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who We Are</a>
+
+                                            }
                                             <div class="dropdown-menu">
                                                 <ul class="list-unstyled">
                                                     <li>
@@ -174,7 +189,16 @@
                                             </div>
                                         </li>
                                         <li class="nav-item dropdown" data-toggle="hover">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
+                                            @if ((string)ViewData["whatwedo"] == "yes")
+                                            {
+                                                <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
+
+                                            }
+                                            else
+                                            {
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
+
+                                            }
                                             <div class="dropdown-menu">
                                                 <ul class="list-unstyled">
                                                     <li class="dropdown dropdown-submenu" data-toggle="hover">
@@ -242,11 +266,27 @@
                                                 </ul>
                                             </div>
                                         </li>
+                                        @*<li class="nav-item dropdown">
+                                            @if ((string)ViewData["Title"] == "Blog")
+                                            {
+                                                <a class="nav-link active" href="/Home/Blog" role="button">Latest News</a>
+                                            }
+                                            else
+                                            {
+                                                <a class="nav-link" href="/Home/Blog" role="button">Latest News</a>
+
+                                            }
+                                        </li>*@
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link" href="/Home/Blog" role="button">Latest News</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link" href="/Home/Contact" role="button">Our Contact</a>
+                                            @if ((string)ViewData["Title"] == "Contact")
+                                            {
+                                                <a class="nav-link active" href="/Home/Contact" role="button">Our Contact</a>
+                                            }
+                                            else
+                                            {
+                                                <a class="nav-link" href="/Home/Contact" role="button">Our Contact</a>
+
+                                            }
                                         </li>
                                     </ul>
                                 </div>
@@ -349,8 +389,8 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-5 ml-auto col-md-12 md-mt-5">
-                            <h4 class="mb-4 text-white">About Consulterz</h4>
-                            <p class="mb-3">Consulterz - Business Consulting HTML5 Template Is fully Responsive, Creative, Modern HTML5 Template.</p>
+                            <h4 class="mb-4 text-white">About KSA Immigration</h4>
+                            <p class="mb-3">KSA Immigration - We provide a full range of immigration services for families, individuals and entrepreneurs.  </p>
                             <div class="footer-cntct">
                                 <ul class="media-icon list-unstyled">
                                     <li>
