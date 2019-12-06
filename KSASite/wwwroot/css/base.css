@@ -156,7 +156,7 @@ span,
 .clear-loader { z-index: 999; box-sizing: border-box; display: inline-block; left: 50%; position: absolute; text-align: center; top: 50%; }
 .loader { position: relative; width: 300px; height: 50px; top: 45%; top: -webkit-calc(50% - 25px); top: calc(50% - 10px); left: 25%; left: -webkit-calc(50% - 150px); left: calc(50% - 150px); }
 .loader:before { content: ""; position: absolute; background-color: #fd5b03; top: 0px; left: 0px; height: 50px; width: 0px; z-index: 0; opacity: 1; -webkit-transform-origin: 100% 0%; transform-origin: 100% 0%; -webkit-animation: loader4 10s ease-in-out infinite; animation: loader4 10s ease-in-out infinite; }
-.loader:after { content: "Consulterz"; color: #3143ef; font-weight: bold; font-size: 50px; position: absolute; letter-spacing: 1px; width: 100%; height: 50px; line-height: 50px; left: 0; top: 0; }
+.loader:after { content: "KSA"; color: #3143ef; font-weight: bold; font-size: 50px; position: absolute; letter-spacing: 1px; width: 100%; height: 50px; line-height: 50px; left: 0; top: 0; }
 
 @-webkit-keyframes loader4{
     0%{width: 0px;}
